@@ -15303,7 +15303,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   max-height: 360px;
   width: 400px;
   height: 300px;
-  background: #3085a3;
+  background: #000;
   text-align: center;
   cursor: pointer;
   display: inline-block;
@@ -15355,6 +15355,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
   font-weight: 300;
   text-align: left;
   color: #fff;
+    font-size: 27px;
 }
 
 .grid figure h2 span {
@@ -15373,7 +15374,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.active {
 
 
 figure.effect-kira {
-  background: #fff;
+
   text-align: left;
 }
 
@@ -15387,7 +15388,7 @@ figure.effect-kira figcaption {
 }
 
 figure.effect-kira p {
-  padding: 2.25em 0.5em;
+
   font-weight: 600; 
   font-size: 100%;
   line-height: 1.5;
@@ -15397,7 +15398,7 @@ figure.effect-kira p {
   -webkit-transform: translate3d(0,-10px,0);
   transform: translate3d(0,-10px,0);
    text-align: center;
-  padding: 16px;
+  padding: 25px;
 }
 
 figure.effect-kira p a {
@@ -15443,3 +15444,7 @@ figure.effect-kira:hover figcaption::before {
   -webkit-transform: translate3d(0,4em,0) scale3d(1,1,1) ;
   transform: translate3d(0,4em,0) scale3d(1,1,1);
 }
+
+
+ 
+
