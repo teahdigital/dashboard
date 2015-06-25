@@ -11,61 +11,33 @@
 	    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 	</head>
 	<body class="focusedform">
+	<!-- <body class="focusedform" style="background-image: url('http://projects.teah.digital/codesapiens/images/bg-start.jpg'); background-size: cover;"> -->
 		<div class="verticalcenter">
 			<a href="index.htm"><img src="assets/img/logo-big.png" alt="Logo" class="brand" /></a>
+			<!-- <a href="index.htm"><img src="assets/img/logo.png" alt="Logo" class="brand" /></a> -->
 			<div class="panel panel-primary">
 				<div class="panel-body">
-					<!-- Old -->
-					<!-- <form action="#" class="form-horizontal" style="margin-bottom: 0px !important;">
-						<div class="form-group">
-							<div class="col-sm-12">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user"></i></span>
-									<input type="text" class="form-control" id="username" placeholder="Username">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="col-sm-12">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
-									<input type="password" class="form-control" id="password" placeholder="Password">
-								</div>
-							</div>
-						</div>
-						<div class="clearfix">
-							<div class="pull-right"><label><input type="checkbox" style="margin-bottom: 20px" checked=""> Remember Me</label></div>
-						</div>
-					</form> -->
 
 					<!-- New Angular -->
 
 					<form name="loginForm" ng-controller="LoginController" ng-submit="login(credentials)" novalidate>
-						<div class="input-group">
+						<div class="input-group col-sm-12">
 							<label for="username">Username: </label><br/>
-							<input type="text" id="username" ng-model="credentials.username">
+							<input type="text" id="username" class="col-sm-12" ng-model="credentials.username">
 						</div>
-						<div class="input-group">
+						<div class="input-group col-sm-12">
 							<label for="password">Password: </label><br/>
-							<input type="password" id="password" ng-model="credentials.password">
+							<input type="password" id="password" class="col-sm-12" ng-model="credentials.password">
 						</div>
 
-						<div class="col-sm-12">
-							<button type="submit">Login</button>
+						<div class="panel-footer">
+							<a href="index.htm" class="btn btn-primary col-sm-12">Login</a>
 						</div>
-						
 					</form>
 					<!--  -->
 
 				</div>
-				<div class="panel-footer">
-					<a href="extras-forgotpassword.htm" class="pull-left btn btn-link" style="padding-left:0">Forgot password?</a>
 					
-					<div class="pull-right">
-						<a href="#" class="btn btn-default">Reset</a>
-						<a href="index.htm" class="btn btn-primary">Log In</a>
-					</div>
-				</div>
 			</div>
 		 </div>
 	</body>
