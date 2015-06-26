@@ -1,0 +1,41 @@
+ <div id="page-content" ng-controller="homeController" >
+	<div id='wrap'>
+		<div id="page-heading">
+			<ol class="breadcrumb">
+				<li><a href=".#/">Dashboard</a></li>
+				<li class="active">Home</li>
+			</ol>
+
+			<h1>Bienvenido, JuanCa</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+                        
+                      
+
+                        <div class="search">
+                            <i class="fa fa-search"></i>
+                            <input ng-model="searchProject" type="text" value="Busque su proyecto" onfocus="if (this.value == 'Busque su proyecto') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Busque su proyecto';}">
+                        </div>
+                        
+                        <hr>
+
+                       <div class="grid">
+                            <figure ng-animate="'animate'" class="effect-julia" ng-repeat="project in projects | filter:searchProject" >
+                                <img src="{{ project.screenshot }}" />
+                                <figcaption>
+                                    <h2>{{ project.name }} - <span>{{ project.client.name }}</span></h2>
+                                    <div>
+                                        <p ng-repeat="url in project.urls" ><a target="_blank" href="{{ url.url }}">{{ url.name }}</a></p> 
+                                    </div>
+                                </figcaption>           
+                            </figure>
+                       </div>
+
+                   
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

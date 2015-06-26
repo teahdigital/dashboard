@@ -45,65 +45,21 @@
     <nav ng-controller="navController" id="page-leftbar" role="navigation">
             <!-- BEGIN SIDEBAR MENU -->
             <ul class="acc-menu" id="sidebar">
-                <li><a href="index.html"><i class="fa fa-search"></i> <span>Buscar</span></a></li>
+                <li><a href=".#/"><i class="fa fa-search"></i> <span>Buscar</span></a></li>
 
                 <li><a href="javascript:;"><i class="fa fa-users"></i> <span>Clientes</span> </a>
                     <ul class="acc-menu">
 
-                        <li ng-repeat="client in clients" ><a href="layout-grid.htm"><span>{{ client.name }}</span></a> 
+                        <li ng-repeat="c in clients" ><a  href=".#/client/{{ c._id }}/"><span>{{ c.name }}</span></a> 
                     </ul>
                 </li>
             </ul>
             <!-- END SIDEBAR MENU -->
     </nav>
 
-    <div id="page-content" ng-controller="homeController" >
-    	<div id='wrap'>
-    		<div id="page-heading">
-    			<ol class="breadcrumb">
-    				<li><a href="index.htm">Dashboard</a></li>
-    				<li class="active">Home</li>
-    			</ol>
+   
 
-    			<h1>Bienvenido, JuanCa</h1>
-    		</div>
-    		<div class="container">
-    			<div class="row">
-    				<div class="col-md-12">
-                            
-                          
-
-                            <div class="search">
-                                <i class="fa fa-search"></i>
-                                <input ng-model="searchProject" type="text" value="Busque su proyecto" onfocus="if (this.value == 'Busque su proyecto') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Busque su proyecto';}">
-                            </div>
-                            
-                            <hr>
-
-                            <div class="grid">
-                                <figure class="effect-kira" ng-repeat="project in projects | filter:searchProject" >
-                                    <img src="{{ project.screenshot }}" />
-                                    <figcaption>
-                                        <h2>{{ project.name }} - <span>{{ project.client }}</span></h2>
-                                        <p>
-                                            <a href="#"><i class="fa fa-fw fa-home"></i></a>
-                                            <a href="#"><i class="fa fa-fw fa-download"></i></a>
-                                            <a href="#"><i class="fa fa-fw fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-fw fa-share"></i></a>
-                                        </p>
-                                    </figcaption>           
-                                </figure>
-                          
-                            </div>
-
-                       
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-
-
+    <div ng-view></div>
 
 
 
@@ -135,7 +91,10 @@
 
 
 <script src="scripts/angular.js"></script> 
+<script src="scripts/angular-route.js"></script> 
+<script src="scripts/angular-animate.js"></script> 
 <script src="scripts/app.js"></script>
+<script src="scripts/controllers.js"></script>
 
 </body>
 </html>

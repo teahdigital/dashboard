@@ -1,23 +1,27 @@
 (function(){
 	'use strict';
 
-	var app = angular.module('dashboard', []);
+	var app = angular.module('dashboard', ['ngRoute', 'ngAnimate', 'appControllers']);
 
-	app.controller('homeController', function($scope, $http){
+	app.config(function($routeProvider) {
+		$routeProvider
 
-		$http.get("data/projects.json").success(function(response) {
-			$scope.projects = response;
-		}); 
+		.when('/', {
+			templateUrl : 'views/home.html',
+			controller  : 'homeController'
+		})
 
-	});
+		.when('/client/:id/', {
+			templateUrl : 'views/client.html',
+			controller  : 'clientController'
+		})
 
-	app.controller('navController', function($scope, $http){
-		
-		$http.get("data/clients.json").success(function(response) {
-			$scope.clients = response;
+		.otherwise({
+			redirectTo:'/'
 		});
-
 	});
 
 
+
+	angular.module('appControllers', []);
 })();

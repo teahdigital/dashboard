@@ -1,18 +1,23 @@
  [
 		{
-			"name": "Lanco"
+			"name": "Lanco",
+			"slug": "lanco"
 		},
 		{
-			"name": "Dos Pinos"
+			"name": "Dos Pinos",
+			"slug": "dos-pinos"
 		},
 		{
-			"name": "Crosssco"
+			"name": "Crosssco",
+			"slug": "crossco"
 		},
 		{
-			"name": "Almotec"
+			"name": "Almotec",
+			"slug": "almotec"
 		},
 		{
-			"name": "Tintos y Blancos"
+			"name": "Tintos y Blancos",
+			"slug": "tintos-y-blancos"
 		}
 
 ]

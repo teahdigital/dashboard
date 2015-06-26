@@ -1,6 +1,5 @@
 [
 		{
-			"id": "01",
 			"name": "Web",
 			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. lorempa Adipisci mollitia aspernatur nulla voluptas unde iste repudiandae rerum iusto dolor ab",
 			"urls": [
@@ -17,49 +16,35 @@
 					"url": "http://www.lancopaints.com/"
 				}
 			],
-			"client": "Lanco",
+			"client":{
+				"id": "558c892dc6919d536fbb70d0",
+				"name": "Lanco",
+				"slug": "lanco",
+			},
 			"screenshot": "data/images/1.png"
 		},
 		{
-			"id": "02",
-			"name": "Día del Padre 2015",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci mollitia aspernatur nulla voluptas unde iste repudiandae rerum iusto dolor ab",
+			"name": "Web",
+			"description": "Lorem web ipsum dolor sit amet, consectetur adipisicing elit. lorempa Adipisci mollitia aspernatur nulla voluptas unde iste repudiandae rerum iusto dolor ab",
 			"urls": [
 				{
 					"name": "Front-end",
-					"url": "http://projects.teah.digital/conoceapapa/front-end/"
+					"url": "http://projects.teah.digital/dos-pinos/web/front-end/"
 				},
 				{
 					"name": "Backend-end",
-					"url": "http://projects.teah.digital/conoceapapa/backend-end/"
+					"url": "http://projects.teah.digital/dos-pinos/web/backend-end/"
 				},
 				{
 					"name": "Distribución",
-					"url": "http://www.conoceapapa.com/"
+					"url": "http://www.dospinos.com/"
 				}
 			],
-			"client": "Lanco",
+			"client":{
+				"id": "558c8946c6919d536fbb70d1",
+				"name": "Dos Pinos",
+				"slug": "dos-pinos",
+			},
 			"screenshot": "data/images/2.png"
-		},
-		{
-			"id": "03",
-			"name": "Día de la Madre 2015",
-			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci mollitia aspernatur nulla voluptas unde iste repudiandae rerum iusto dolor ab",
-			"urls": [
-				{
-					"name": "Front-end",
-					"url": "http://projects.teah.digital/conoceamama/front-end/"
-				},
-				{
-					"name": "Backend-end",
-					"url": "http://projects.teah.digital/conoceamama/backend-end/"
-				},
-				{
-					"name": "Distribución",
-					"url": "http://www.conoceamama.com/"
-				}
-			],
-			"client": "Lanco",
-			"screenshot": "data/images/3.png"
 		}
 ]
