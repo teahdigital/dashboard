@@ -16,8 +16,8 @@ module.exports = function(app) {
   };
 
 
-  getProjectsByClientId = function(req, res) {
-    Projects.find({ 'client.id': req.params.id }, function(err, data) {
+  getProjectsByClientSlug = function(req, res) {
+    Projects.find({ 'client.slug': req.params.slug }, function(err, data) {
       if(!err) {
         res.header('Access-Control-Allow-Origin', 'http://localhost');
         res.send(data);
@@ -39,8 +39,8 @@ module.exports = function(app) {
     });
   };
 
-  getClientbyId = function(req, res) {
-    Clients.findById(req.params.id, function(err, data) {
+  getClientbySlug = function(req, res) {
+    Clients.findOne({ 'slug': req.params.slug }, function(err, data) {
       if(!err) {
         res.header('Access-Control-Allow-Origin', 'http://localhost');
         res.send(data);
@@ -51,8 +51,8 @@ module.exports = function(app) {
   };
 
   app.get('/projects', getAllProjects);
-  app.get('/projects/:id', getProjectsByClientId);
+  app.get('/projects/:slug', getProjectsByClientSlug);
   app.get('/clients', getAllClients);
-  app.get('/clients/:id', getClientbyId);
+  app.get('/client/:slug', getClientbySlug);
 
 }

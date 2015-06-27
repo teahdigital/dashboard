@@ -11,7 +11,7 @@
 			controller  : 'homeController'
 		})
 
-		.when('/client/:id/', {
+		.when('/client/:slug/', {
 			templateUrl : 'views/client.html',
 			controller  : 'clientController'
 		})
@@ -21,7 +21,6 @@
 		});
 	});
 
-
-
 	angular.module('appControllers', []);
+	
 })();

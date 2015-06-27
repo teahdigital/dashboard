@@ -22,7 +22,7 @@
                         <hr>
 
                        <div class="grid">
-                            <figure ng-animate="'animate'" class="effect-julia" ng-repeat="project in projects | filter:searchProject" >
+                            <figure class="effect-julia" ng-repeat="project in projects | filter:searchProject" >
                                 <img src="{{ project.screenshot }}" />
                                 <figcaption>
                                     <h2>{{ project.name }} - <span>{{ project.client.name }}</span></h2>

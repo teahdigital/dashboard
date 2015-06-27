@@ -20,13 +20,13 @@
 	})
 	
 	.controller('clientController', ['$scope','$routeParams','$http', function($scope, $routeParams, $http) {
-  		var id = $routeParams.id;
+  		var slug = $routeParams.slug;
 
-		$http.get("http://localhost:8000/projects/"+id+"/").success(function(response) {
+		$http.get("http://localhost:8000/projects/"+slug+"/").success(function(response) {
 			$scope.projects = response;
 		}); 
 
-		$http.get("http://localhost:8000/clients/"+id+"/").success(function(response) {
+		$http.get("http://localhost:8000/client/"+slug+"/").success(function(response) {
 			$scope.client = response;
 		}); 
 
